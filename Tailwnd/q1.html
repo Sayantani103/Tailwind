@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center max-w-[1440px] m-auto border-2 h-screen">
+    <section class="container flex justify-center items-center h-full gap-4 px-10">
+         <!-- login control -->
+         <div class="mx-auto my-auto text-center space-y-4">
+            <h1 class="text-3xl">Login</h1>
+            <p>Enter your credential to access your account</p>
+            <!-- ggogle login -->
+            <div class="w-full py-4">
+                <button class="flex justify-center items-center gap-4 border border-neutral-950 border-1 p-4 mx-auto w-full">
+                    <img class=" max-w-[50px]" src="https://cdn-icons-png.freepik.com/256/13170/13170545.png?ga=GA1.2.805884095.1713427080&semt=ais_hybrid" alt="google icons">
+                    <span>
+                        Login with Google
+                    </span>
+                </button>
+            </div>
+            
+            <!-- or section -->
+            <div class="flex items-center gap-4">
+                <div class="w-full lg:w-44 h-[0.5px] bg-[#828282]"></div>
+                <p>Or</p>
+                <div class="w-full lg:w-44 h-[0.5px] bg-[#828282]"> </div>
+            </div>
+
+            <!-- email section -->
+            <div class="sm:col-span-4">
+                
+                <span class="flex block text-sm font-medium leading-6 text-gray-900">Email address</span>
+                  <input placeholder=" email@gmail.com" id="email" name="email" type="email" autocomplete="email" class="p-3 w-full outline outline-[0.5px] outline-[#828282] rounded-sm">
+            </div>
+            <div>
+                <label for="password" class="flex justify-between w-full">
+                    <span> Password </span>
+                    <span>
+                      <a href="#" class="text-blue-600"> Forgot Password?</a>
+                    </span>
+                </label>
+                <input type="password" id="password" name="password" placeholder="Password"
+                class="p-3 w-full outline outline-[0.5px] outline-[#828282] rounded-sm"><br>
+            </div>
+<!-- button Login -->
+            <button class="bg-sky-600 w-full text-white py-2">
+                Login
+            </button>
+            
+            <!-- p tag -->
+            <div class="flex justify-center gap-2">
+                <p class="text-zinc-500">Don't have an account? </p>
+                <p>Register here</p>
+            </div>
+         </div>
+        
+        <!-- hero image -->
+        <div class="hidden lg:block flex-initial w-30">
+            <img src="https://tailwindcss.com/_next/static/media/kids-jumper.ff28ead2.jpg" alt="hero-image" class="h-[90vh] inset-0 max-h-[600px] object-cover rounded-lg" loading="lazy">
+        </div>
+    </section>
+</body>
+</html>
